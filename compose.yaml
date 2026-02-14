@@ -39,7 +39,7 @@ services:
       - keycloak-net
 
 networks:
-  keycloak-network:
+  keycloak-net:
     name: keycloak-net
     driver: bridge
 
