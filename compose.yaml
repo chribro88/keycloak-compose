@@ -21,7 +21,7 @@ services:
     depends_on:
       - db
     networks:
-      - keycloak
+      - keycloak-net
     command:
       - start
 
