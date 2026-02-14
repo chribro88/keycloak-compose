@@ -36,7 +36,7 @@ services:
     volumes:
       - ${KEYCLOAK_DB_PATH}:/var/lib/postgresql/data
     networks:
-      - keycloak-network
+      - keycloak-net
 
 networks:
   keycloak-network:
