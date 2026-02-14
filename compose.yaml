@@ -7,7 +7,7 @@ services:
     ports:
       - "8443:8443"
     volumes:
-      - "/etc/ssl/keycloak/:/etc/x509/https" # map certificates to container
+      - ${KEYCLOAK_CERTS_PATH}/:/etc/x509/https # map certificates to container
     environment:
       KEYCLOAK_ADMIN: ${KEYCLOAK_ADMIN}
       KEYCLOAK_ADMIN_PASSWORD: ${KEYCLOAK_PASSWORD}
