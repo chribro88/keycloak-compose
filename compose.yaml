@@ -34,7 +34,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_PORT: 5432
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - ${KEYCLOAK_DB_PATH}:/var/lib/postgresql/data
     networks:
       - keycloak-network
 
